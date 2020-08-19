@@ -474,4 +474,4 @@ async function execute(message, serverQueue) {
     serverQueue.textChannel.send(`Start playing: **${song.title}**`);
   }
 
-bot.login('NzM5MjA4ODg1ODk3OTIwNjE0.XyXH7A.NWEdQ8V_f-NA2IOFR1AnWm8u938');
+bot.login(process.env.BOT_TOKEN);
