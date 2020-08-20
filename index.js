@@ -11,7 +11,7 @@ client.on("message", message => {
         message.channel.send(`🏓 pong - ${client.ws.ping}`)
     }
 })
-#EMBED
+
 // at the top of your file
 const Discord = require('discord.js');
 
