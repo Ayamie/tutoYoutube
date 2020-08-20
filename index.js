@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "!";
 client.on("ready", message => {
