@@ -10,7 +10,7 @@ client.on("message", message => {
     if(message.content === `${prefix}ping`) {
         message.channel.send(`🏓 pong - ${client.ws.ping}`)
     }
-if(message.content === ``){
+if(message.content === `!help`){
 const Embed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
