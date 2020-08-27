@@ -9,14 +9,9 @@ client.on("ready", message => {
 client.on("message", message => {
     if(message.content === `${prefix}ping`) {
         message.channel.send(`🏓 pong - ${client.ws.ping}`)
-    }
-})
-
-// at the top of your file
-const Discord = require('discord.js');
-
-// inside a command, event listener, etc.
-const exampleEmbed = new Discord.MessageEmbed()
+    }
+if(message.content === ``){
+const Embed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
@@ -34,8 +29,8 @@ const exampleEmbed = new Discord.MessageEmbed()
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
-channel.send(exampleEmbed);
-
+message.channel.send(Embed);
+  }
 })
 
 client.login(process.env.TOKEN);
